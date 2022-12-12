@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600&family=Raleway:wght@200;300&display=swap'); 
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+     margin: 0px;
+    padding: 0px;
+}
+
+@font-face {
+    font-family: "lobster";
+    src: url(../fonts/Lobster-Regular.ttf) format("woff2");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+    }
+
+body{
+    height: 1500px;
+    position: relative;
+    scroll-behavior: smooth
+}
+
+a {
+    color:#000000;
+    text-decoration: underline
+}
+
+
+.section-header__wrapper {
+    background-position:center;
+    /* position: relative; */
+    height:175px;
+    background: 
+    linear-gradient(rgb(36, 36, 36),rgba(121, 121, 121, 0.419) 30%, rgba(255, 255, 255, 0) 70%, rgb(36, 36, 36)), 
+    url(../imgs/14770960794_220f687312_o.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    position: relative;
+    display:flex;
+    flex-direction: column;
+    justify-content:flex-end;
+    
+
+
+}
+.section-header__main-name {
+    font-family: lobster;
+    font-size: 100px;
+    text-align: center;
+    opacity: 1;
+    background: linear-gradient(90deg, #000000 33%, #202020 66%, #000000);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+}
+.section-header__menu {
+    display: flex;
+    justify-content: space-around;
+    font-size: 40px;
+    flex-wrap: wrap;
+    height: 60px;
+    align-items:flex-end;
+    color: rgb(206, 206, 206);
+    font-family: lobster;
+
+}
+.historical-periods {
+    padding-bottom: 10px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+.section-main__title-container {
+    content: "";
+    width: 25px;
+    height: 25px;
+    background-color: #000000;
+    position:relative;
+    top: 9px;
+    border: 2px solid rgba(255, 255, 255, 0.643);
+    border-radius: 50%;
+}
+
+
+.section-main__title-about {
+    font-size: 30px;
+    font-family: lobster;
+    text-transform: uppercase;
+    position: relative;
+    padding-left: 30px;
+    cursor: pointer;
+}
+.section-main__text-about {
+    font-size: 20px;
+    font-family: lobster;
+    /* display: none; */
+}
+
+.section-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    padding-bottom: 20px;
+}
+
+.section-main-descriptions {
+    flex-grow: 1;
+    background-size: cover;
+    padding: 10px;
+    background-size: cover;
+    min-height: 700px;
+}
+
+.section-main__about-ancient {
+    background: 
+    linear-gradient(rgba(0, 0, 0, 0)97%, rgba(0, 0, 0, 0.800)), 
+    url(../imgs/about-ancient-background.jpg);
+    background-size: cover;
+}
+
+.section-main__about-middle-ages{
+    background: 
+    linear-gradient(rgba(0, 0, 0, 0.800),rgba(255, 255, 255, 0)3%, rgba(255, 255, 255, 0)97%, rgba(0, 0, 0, 0.800)), 
+    url(../imgs/about-middle-ages-backgrounds.jpg);
+    background-size: cover;
+} 
+
+.section-main__about-twentieth-century {
+    background: 
+    linear-gradient(rgba(0, 0, 0, 0.800),rgba(0, 0, 0, 0.303)3%, rgba(255, 255, 255, 0)97%, rgba(0, 0, 0, 0.800)), 
+    url(../imgs/20-centuary-background.jpg);
+    background-size: cover;
+}
