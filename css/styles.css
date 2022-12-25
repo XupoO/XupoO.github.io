@@ -1,0 +1,200 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600&family=Raleway:wght@200;300&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  margin: 0px;
+  padding: 0px;
+}
+
+@font-face {
+  font-family: "lobster";
+  src: url(../fonts/Lobster-Regular.ttf) format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "gotic";
+  src: url(../fonts/gotic.ttf) format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+body {
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+.section-header {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(94%, rgba(255, 255, 255, 0)), to(rgb(0, 0, 0))), url(../imgs/header.jpg);
+  background: linear-gradient(rgba(255, 255, 255, 0) 94%, rgb(0, 0, 0)), url(../imgs/header.jpg);
+  background-size: cover;
+}
+
+.section-header__wrapper {
+  background-position: center;
+  background-position: center;
+  position: relative;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center center;
+  background-size: 100% 100%;
+  /* position: relative; */
+  height: calc(50px + 140 * ((100vw - 320px) / 1660));
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.section-header__main-name {
+  font-family: gotic;
+  font-size: calc(25px + 75 * ((100vw - 320px) / 1660));
+  text-align: center;
+  opacity: 1;
+  color: rgb(255, 255, 255);
+  -webkit-text-stroke: 0.045em black;
+}
+
+.section-header__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  color: rgb(206, 206, 206);
+  font-family: gotic;
+  font-size: calc(10px + 40 * ((100vw - 320px) / 1660));
+  -webkit-text-stroke: 0.045em black;
+  text-decoration: none;
+}
+
+.section-header__menu a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.section-main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 100%;
+  background-size: cover;
+}
+
+.section-main-descriptions {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  background-size: cover;
+  background-size: cover;
+  min-height: 700px;
+}
+
+.section-main__ancient {
+  background-position: center;
+  background-position: center;
+  position: relative;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center center;
+  background-size: 100% 100%;
+}
+
+.section-main__about-ancient {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgb(0, 0, 0)), color-stop(3%, rgba(255, 255, 255, 0)), color-stop(97%, rgba(255, 255, 255, 0)), to(rgb(0, 0, 0))), url(../imgs/about-ancient-background.jpg);
+  background: linear-gradient(rgb(0, 0, 0), rgba(255, 255, 255, 0) 3%, rgba(255, 255, 255, 0) 97%, rgb(0, 0, 0)), url(../imgs/about-ancient-background.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.section-main__middle-ages {
+  background-position: center;
+  background-position: center;
+  position: relative;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center center;
+  background-size: 100% 100%;
+}
+
+.section-main__about-middle-ages {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgb(0, 0, 0)), color-stop(3%, rgba(255, 255, 255, 0)), color-stop(97%, rgba(255, 255, 255, 0)), to(rgb(0, 0, 0))), url(../imgs/about-middle-ages-backgrounds.jpg);
+  background: linear-gradient(rgb(0, 0, 0), rgba(255, 255, 255, 0) 3%, rgba(255, 255, 255, 0) 97%, rgb(0, 0, 0)), url(../imgs/about-middle-ages-backgrounds.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.section-main__twentieth-century {
+  background-position: center;
+  background-position: center;
+  position: relative;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center center;
+  background-size: 100% 100%;
+}
+
+.section-main__about-twentieth-century {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgb(0, 0, 0)), color-stop(3%, rgba(255, 255, 255, 0)), color-stop(97%, rgba(255, 255, 255, 0)), to(rgb(0, 0, 0))), url(../imgs/20-centuary-background.jpg);
+  background: linear-gradient(rgb(0, 0, 0), rgba(255, 255, 255, 0) 3%, rgba(255, 255, 255, 0) 97%, rgb(0, 0, 0)), url(../imgs/20-centuary-background.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.main__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+}
+
+.footer {
+  background-color: grey;
+  height: calc(40px + 60 * ((100vw - 320px) / 1660));
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding-top: 10px;
+  font-size: calc(15px + 55 * ((100vw - 320px) / 1660));
+}
