@@ -1,0 +1,558 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600&family=Raleway:wght@200;300&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  margin: 0px;
+  padding: 0px;
+}
+
+
+@font-face {
+  font-family: "lobster";
+  src: url(../fonts/Lobster-Regular.ttf) format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+    font-family: "gotic";
+    src: url(../fonts/gotic.ttf) format("woff2");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+body {
+  height: 100%;
+//   position: relative;
+  scroll-behavior: smooth;
+}
+
+.section-header {
+    // position: relative;
+    // background-image: url(../imgs/header.jpg);
+    background: 
+    linear-gradient( rgba(255, 255, 255, 0)97%, rgb(0, 0, 0)), 
+    url(../imgs/header.jpg);
+    // background-size: 100% 100%;
+    background-size: cover;
+}
+
+$maxWidth: 1980;
+@mixin adaptiv-font($pcSize, $mobSize) {
+ $addSize: $pcSize - $mobSize;
+ $maxWidth: $maxWidth - 320;
+ font-size: calc(#{$mobSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth}));
+}
+
+@mixin adaptiv-wrapper-section($pcSize, $mobSize) {
+    $addSize: $pcSize - $mobSize;
+    $maxWidth: $maxWidth - 320;
+    height: calc(#{$mobSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth}));
+   }
+
+
+.section-header__wrapper {
+  background-position: center; 
+   background-position: center;
+    position: relative; 
+     background-attachment: fixed;
+  background-size: cover;      
+     background-position: center center;     
+       background-size: 100% 100%;
+  /* position: relative; */
+  @include adaptiv-wrapper-section (190, 50);
+//   background: -webkit-gradient(linear, left top, left bottom, from(rgb(36, 36, 36)), color-stop(30%, rgba(121, 121, 121, 0.419)), color-stop(70%, rgba(255, 255, 255, 0)), to(rgb(36, 36, 36))), url(../imgs/14770960794_220f687312_o.jpg);
+//   background: linear-gradient(rgb(36, 36, 36), rgba(121, 121, 121, 0.419) 30%, rgba(255, 255, 255, 0) 70%, rgb(36, 36, 36)), url(../imgs/14770960794_220f687312_o.jpg);
+// background-image: url(../imgs/header.jpg);
+
+
+
+ 
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: space-between;
+          padding-bottom: 1%;
+          background-repeat: no-repeat;
+ 
+          background-attachment: fixed;
+          -webkit-background-size: cover;
+          -moz-background-size: cover;
+          -o-background-size: cover;
+          background-size: cover;
+          user-select:none
+          
+        
+    
+}
+
+.section-header__main-name {
+  font-family: gotic;
+  @include adaptiv-font(100, 25);
+  text-align: center;
+  opacity: 1;
+//   background: -webkit-gradient(linear, left top, right top, color-stop(33%, #000000), color-stop(66%, #202020), to(#000000));
+//   background: linear-gradient(90deg, #000000 33%, #202020 66%, #000000);
+// background-color: rgb(255, 255, 255);
+//   -webkit-background-clip: text;
+//   -webkit-text-fill-color: transparent;
+color: rgb(255, 255, 255);
+-webkit-text-stroke: calc(0.045em) black;
+}
+
+.section-header__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-between;
+      margin-left: 2%;
+      margin-right: 2%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+
+  font-family: gotic;
+     -webkit-text-stroke: calc(0.05em) black;
+  @include adaptiv-font(50, 15);
+}
+.section-header__menu a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    user-select:none
+    // -webkit-text-stroke: 0.5px #000;
+}
+
+
+
+// .section-main__title-container {
+//   content: "";
+//   width: 25px;
+//   height: 25px;
+//   background-color: #000000;
+//   position: relative;
+//   top: 9px;
+//   border: 2px solid rgba(255, 255, 255, 0.643);
+//   border-radius: 50%;
+// }
+
+
+// .section-main__title-container {
+//     content: "";
+//     width: 25px;
+//     height: 25px;
+//     background-color: #000000;
+//     position:relative;
+//     top: 9px;
+//     border: 2px solid rgba(255, 255, 255, 0.643);
+//     border-radius: 50%;
+// }
+
+// .section-main-descriptions {
+//   background-size: cover;
+
+//   background-repeat: no-repeat;
+// }
+// .section-main {
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: space-between;
+
+// }
+
+
+// .section-main__about-ancient {
+//   background: -webkit-gradient(linear, left top, left bottom, color-stop(97%, rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.8))), url(../imgs/about-ancient-background.jpg);
+//   background: linear-gradient(rgba(0, 0, 0, 0) 97%, rgba(0, 0, 0, 0.8)), url(../imgs/about-ancient-background.jpg);
+//   background-size: contain;  
+// //   height: 100%; 
+
+//   background-repeat: no-repeat;
+//   flex-grow: 1;
+// }
+
+// .section-main__about-middle-ages {
+//   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8)), color-stop(3%, rgba(255, 255, 255, 0)), color-stop(97%, rgba(255, 255, 255, 0)), to(rgba(0, 0, 0, 0.8))), url(../imgs/about-middle-ages-backgrounds.jpg);
+//   background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(255, 255, 255, 0) 3%, rgba(255, 255, 255, 0) 97%, rgba(0, 0, 0, 0.8)), url(../imgs/about-middle-ages-backgrounds.jpg);
+
+//   background-size: contain;  
+//   background-repeat: no-repeat;
+//   flex-grow: 1;
+// }
+
+// .section-main__about-twentieth-century {
+//   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8)), color-stop(3%, rgba(0, 0, 0, 0.303)), color-stop(97%, rgba(255, 255, 255, 0)), to(rgba(0, 0, 0, 0.8))), url(../imgs/20-centuary-background.jpg);
+//   background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.303) 3%, rgba(255, 255, 255, 0) 97%, rgba(0, 0, 0, 0.8)), url(../imgs/20-centuary-background.jpg);
+
+//   background-size: contain;  
+//   background-repeat: no-repeat;
+//   flex-grow: 1;
+// }
+
+
+
+
+.section-main{
+  height: 100%;
+  background-size: cover;
+}
+
+.section-main__wrapper {
+  position: relative;
+}
+
+
+
+// .section-main__ancient__wrapper {
+//   display: grid;
+//   grid-template-columns: 20% 20% 20% 20% 20%;
+//   grid-template-rows: 50% 50%;
+//   background-size: cover;
+//   background-position: center;
+//   // @include adaptiv-wrapper-section (690, 150);
+
+//   font-family: gotic;
+// }
+
+
+.section-main__about{
+  border: 4px solid black;
+  text-align: center;
+  border-radius: 0px;
+  // background: white;
+  // border-radius: 50%;
+  // width: 60px;
+  // height: 60px;
+
+  background-size: cover;
+  background-position: center;
+  // margin: auto;
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: 5%;
+  padding-bottom: 1%;
+}
+
+@media (min-width: 0px) and (max-width: 500px) {
+  .section-main__period { 
+     display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(10,1fr);
+  
+}
+.section-main__about{
+    background-image: url(../imgs/circle-with-bottom-and-top-wing.png);
+    height: 300px;
+    font-size: 30px;
+    font-family: gotic;
+}
+.section-main__about-ancient__1{
+  background-image: url(../imgs/circle-with-bottom-wing.png)
+}
+.section-main__about{
+  display:block;
+}
+
+  .philopher{
+    @include adaptiv-font(50, 30);
+}
+
+.description{
+  @include adaptiv-font(30, 15);
+}}
+
+
+
+@media (min-width: 501px) and (max-width: 799px) {
+  .section-main__period {   
+     display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(5, 1fr);
+ 
+}
+.section-main__about{
+    background-image: url(../imgs/circle-with-bottom-and-top-wing.png);
+    height: 300px;
+    font-family: gotic;
+}
+.section-main__about-ancient__1{
+  background-image: url(../imgs/circle-with-right-wing.png)
+}
+
+.section-main__about-ancient__2 , .section-main__about-ancient__6, .section-main__about-ancient__10 , .section-main__about-middle-ages__4 , .section-main__about-middle-ages__8 , .section-main__about-twentieth-century__2 , .section-main__about-twentieth-century__6 , .section-main__about-twentieth-century__10{
+  background-image: url(../imgs/circle-with-left-and-bottom-wing.png)
+}
+
+.section-main__about-ancient__3, .section-main__about-ancient__7, .section-main__about-middle-ages__1 , .section-main__about-middle-ages__5 , .section-main__about-middle-ages__9, .section-main__about-twentieth-century__3, .section-main__about-twentieth-century__7{
+  background-image: url(../imgs/circle-with-rigt-and-bottom-wing.png)
+}
+
+.section-main__about-ancient__4, .section-main__about-ancient__8, .section-main__about-middle-ages__2, .section-main__about-middle-ages__6, .section-main__about-middle-ages__10, .section-main__about-twentieth-century__4, .section-main__about-twentieth-century__8{
+  background-image: url(../imgs/circle-with-left-and-top-wing.png)
+}
+
+.section-main__about-ancient__5, .section-main__about-ancient__9 , .section-main__about-middle-ages__3 , .section-main__about-middle-ages__7, .section-main__about-twentieth-century__5, .section-main__about-twentieth-century__9, .section-main__about-twentieth-century__1{
+  background-image: url(../imgs/circle-with-right-and-top-wing.png)
+}
+
+.section-main__about{
+  display:flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 5% 10% 0px 10%;
+}
+
+  .philopher{
+    @include adaptiv-font(50, 10);
+}
+
+.description{
+  @include adaptiv-font(30, 6);
+}}
+
+
+
+
+@media (min-width: 800px) {
+  .section-main__period { 
+     display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2,1fr);
+  
+}
+.section-main__about{
+    background-image: url(../imgs/circle-with-both-wings.png);
+    height: 300px;
+    font-size: 30px;
+    font-family: gotic;
+}
+.section-main__about-ancient__1{
+  background-image: url(../imgs/circle-with-right-wing.png);
+}
+
+.section-main__about-ancient__5, .section-main__about-middle-ages__5, .section-main__about-twentieth-century__5{
+  background-image: url(../imgs/circle-with-left-and-bottom-wing.png);
+}
+
+.section-main__about-ancient__10 , .section-main__about-middle-ages__10 , .section-main__about-twentieth-century__10{
+  background-image: url(../imgs/circle-with-left-and-top-wing.png);
+}
+
+.section-main__about-ancient__6, .section-main__about-middle-ages__6, .section-main__about-twentieth-century__6{
+  background-image: url(../imgs/circle-with-rigt-and-bottom-wing.png);
+}
+
+.section-main__about-middle-ages__1 , .section-main__about-twentieth-century__1{
+  background-image: url(../imgs/circle-with-right-and-top-wing.png);
+}
+
+.section-main__about{
+  display:block;
+}
+
+  .philopher{
+    @include adaptiv-font(50, 30);
+}
+
+.description{
+  @include adaptiv-font(30, 15);
+}}
+
+
+
+
+
+
+
+.section-main__ancient{
+  background: url(../imgs/about-ancient-background.jpg);
+      background-position: center; 
+    background-position: center;
+     position: relative; 
+      // background-attachment: fixed;
+   background-size: cover;      
+      background-position: center center;     
+}
+
+
+
+// .section-main__about-ancient__1{
+//   background-image: url(../imgs/circle-with-right-wing.png);
+// }
+// .section-main__about-ancient__6{
+//   background-image: url(../imgs/circle-with-rigt-and-bottom-wing.png);
+// }
+
+// .section-main__about-ancient__5{
+//   background-image: url(../imgs/circle-with-left-and-bottom-wing.png);
+// }
+
+// .section-main__about-ancient__10{
+//   background-image: url(../imgs/circle-with-left-and-top-wing.png);
+// }
+
+
+// .section-main__middle-ages__wrapper {
+//   display: grid;
+//   grid-template-columns: 20% 20% 20% 20% 20%;
+//   grid-template-rows: 50% 50%;
+//   background-size: cover;
+//   background-position: center;
+//   @include adaptiv-wrapper-section (690, 150);
+
+//   font-family: gotic;
+// }
+
+
+
+
+
+.section-main__middle-ages{
+  background: url(../imgs/about-middle-ages-backgrounds.jpg);
+      background-position: center; 
+    background-position: center;
+     position: relative; 
+      // background-attachment: fixed;
+   background-size: cover;      
+      background-position: center center;     
+}
+
+
+
+// .section-main__about-middle-ages__1{
+//   background-image: url(../imgs/circle-with-right-and-top-wing.png);
+// }
+// .section-main__about-middle-ages__6{
+//   background-image: url(../imgs/circle-with-rigt-and-bottom-wing.png);
+// }
+
+// .section-main__about-middle-ages__5{
+//   background-image: url(../imgs/circle-with-left-and-bottom-wing.png);
+// }
+
+// .section-main__about-middle-ages__10{
+//   background-image: url(../imgs/circle-with-left-and-top-wing.png);
+// }
+
+
+// .section-main__twentieth-century__wrapper {
+//   display: grid;
+//   grid-template-columns: 20% 20% 20% 20% 20%;
+//   grid-template-rows: 50% 50%;
+//   background-size: cover;
+//   background-position: center;
+//   @include adaptiv-wrapper-section (690, 150);
+
+//   font-family: gotic;
+// }
+
+
+
+
+
+.section-main__twentieth-century{
+  background: url(../imgs/20-centuary-background.jpg);
+      background-position: center; 
+    background-position: center;
+     position: relative; 
+      // background-attachment: fixed;
+   background-size: cover;      
+      background-position: center center;     
+}
+
+
+
+// .section-main__about-twentieth-century__1{
+//   background-image: url(../imgs/circle-with-right-and-top-wing.png);
+// }
+// .section-main__about-twentieth-century__6{
+//   background-image: url(../imgs/circle-with-rigt-and-bottom-wing.png);
+// }
+
+// .section-main__about-twentieth-century__5{
+//   background-image: url(../imgs/circle-with-left-and-bottom-wing.png);
+// }
+
+// .section-main__about-twentieth-century__10{
+//   background-image: url(../imgs/circle-with-left-and-top-wing.png);
+// }
+
+
+
+
+// .section-main__ancient {
+//     background-position: center; 
+//     background-position: center;
+//      position: relative; 
+//       background-attachment: fixed;
+//    background-size: cover;      
+//       background-position: center center;     
+//         background-size: 100% 100%;
+// }
+
+// .section-main__about-ancient {
+//     background: 
+//     linear-gradient(rgb(0, 0, 0),rgba(255, 255, 255, 0)1%, rgba(255, 255, 255, 0)97%, rgb(0, 0, 0)), 
+//     url(../imgs/about-ancient-background.jpg);
+//     background-size: cover;
+//     background-position: center;
+// }
+
+// .section-main__middle-ages {
+//     background-position: center; 
+//     background-position: center;
+//      position: relative; 
+//       background-attachment: fixed;
+//    background-size: cover;      
+//       background-position: center center;     
+//         background-size: 100% 100%;
+// }
+
+// .section-main__about-middle-ages{
+//     background: 
+//     linear-gradient(rgb(0, 0, 0),rgba(255, 255, 255, 0)3%, rgba(255, 255, 255, 0)97%, rgb(0, 0, 0)), 
+//     url(../imgs/about-middle-ages-backgrounds.jpg);
+//     background-size: cover;
+//     background-position: center;
+// } 
+
+// .section-main__twentieth-century{
+//     background-position: center; 
+//     background-position: center;
+//      position: relative; 
+//       background-attachment: fixed;
+//    background-size: cover;      
+//       background-position: center center;     
+//         background-size: 100% 100%;
+// }
+
+// .section-main__about-twentieth-century {
+//     background: 
+//     linear-gradient(rgb(0, 0, 0),rgba(0, 0, 0, 0)3%, rgba(255, 255, 255, 0)97%, rgb(0, 0, 0)), 
+//     url(../imgs/20-centuary-background.jpg);
+//     background-size: cover;
+//     background-position: center;
+// }
+
+
+
+.footer {
+    background-color: grey;
+    @include adaptiv-wrapper-section (100, 40);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 10px;
+    @include adaptiv-font(70, 15);
+
+}
